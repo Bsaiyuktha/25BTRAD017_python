@@ -19,19 +19,19 @@ def number_guessing_game():
 
             # Check the user's guess against the secret number
             if guess < 1 or guess > 100:
-                print("⚠️ Please guess a number within the 1 to 100 range.")
+                print("Please guess a number within the 1 to 100 range.")
             elif guess < secret_number:
-                print("📉 Too low! Try a higher number.")
+                print("Too low! Try a higher number.")
             elif guess > secret_number:
-                print("📈 Too high! Try a lower number.")
+                print(" Too high! Try a lower number.")
             else:
-                print(f"\n🎉 CONGRATULATIONS! You found the number!")
-                print(f"🏆 It took you {attempts} attempts to win.")
+                print(f"\ CONGRATULATIONS! You found the number!")
+                print(f" It took you {attempts} attempts to win.")
                 break
 
         except ValueError:
             # Handle cases where the input is not a valid integer
-            print("❌ Invalid input! Please enter a valid whole number.")
+            print(" Invalid input! Please enter a valid whole number.")
 
 
 # Run the game
